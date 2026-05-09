@@ -117,7 +117,7 @@ cd infra && cdk destroy --profile your-profile
 ## Project Structure
 
 ```
-indicvoice/
+multilingual-indic-voicebot/
 ├── backend/
 │   ├── main.py          # FastAPI + Pipecat pipeline
 │   ├── usecase.py       # System prompt + RAG tool (customize here)
