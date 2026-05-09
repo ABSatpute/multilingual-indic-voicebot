@@ -1,0 +1,15 @@
+{
+    "amplify": {
+        "Auth": {
+            "Cognito": {
+                "userPoolClientId": "USER_POOL_APP_CLIENT_ID",
+                "userPoolId": "USER_POOL_ID",
+                "identityPoolId": "COGNITO_IDENITITY_POOL_ID",
+                "region": "ap-south-1"
+            }
+        }
+    },
+    "websocket": {
+        "apiUrl": "ws://localhost:8080/ws"
+    }
+}

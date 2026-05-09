@@ -1,0 +1,17 @@
+python-dotenv==1.1.1
+pipecat-ai[aws,aws-nova-sonic,silero,websocket]==0.0.102
+uvicorn>=0.31.1
+boto3>=1.38.25
+aioboto3>=15.0.0
+httpx==0.28.1
+requests==2.32.3
+onnxruntime==1.23.2
+strands-agents==1.15.0
+strands-agents-tools
+soundfile==0.13.1
+websockets==15.0.1
+cryptography==46.0.3
+aiohttp>=3.11.11
+aws-sdk-bedrock-runtime
+numpy==1.26.4
+fasttext

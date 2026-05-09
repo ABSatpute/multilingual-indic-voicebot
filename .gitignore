@@ -1,0 +1,56 @@
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+.secrets/
+
+# AWS
+.aws/
+cdk.out/
+cdk.context.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+
+# Node / Frontend
+node_modules/
+frontend/dist/
+frontend/build/
+*.log
+npm-debug.log*
+
+# Docker
+*.tar
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Pre-commit
+.pre-commit-cache/
+
+# Detect-secrets baseline (keep this, it's not a secret)
+!.secrets.baseline

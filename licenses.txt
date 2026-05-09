@@ -1,0 +1,201 @@
+ Name                                     Version      License                                                      
+ Authlib                                  1.6.5        BSD License                                                  
+ Jinja2                                   3.1.6        BSD License                                                  
+ Markdown                                 3.10         BSD-3-Clause                                                 
+ MarkupSafe                               3.0.3        BSD-3-Clause                                                 
+ PyJWT                                    2.10.1       MIT License                                                  
+ PyYAML                                   6.0.3        MIT License                                                  
+ Pygments                                 2.19.2       BSD License                                                  
+ SecretStorage                            3.5.0        BSD-3-Clause                                                 
+ aioboto3                                 15.5.0       Apache Software License                                      
+ aiobotocore                              2.25.1       Apache-2.0                                                   
+ aiofiles                                 24.1.0       Apache Software License                                      
+ aiohappyeyeballs                         2.6.1        Python Software Foundation License                           
+ aiohttp                                  3.13.2       Apache-2.0 AND MIT                                           
+ aioitertools                             0.13.0       MIT                                                          
+ aiosignal                                1.4.0        Apache Software License                                      
+ annotated-types                          0.7.0        MIT License                                                  
+ anyio                                    4.11.0       MIT                                                          
+ asttokens                                3.0.1        Apache 2.0                                                   
+ attrs                                    25.4.0       MIT                                                          
+ aws-cdk-lib                              2.215.0      Apache-2.0                                                   
+ aws-cdk.asset-awscli-v1                  2.2.242      Apache-2.0                                                   
+ aws-cdk.asset-node-proxy-agent-v6        2.1.0        Apache-2.0                                                   
+ aws-cdk.cloud-assembly-schema            48.20.0      Apache-2.0                                                   
+ aws-requests-auth                        0.4.3        BSD License                                                  
+ aws-sdk-signers                          0.1.0        Apache Software License                                      
+ aws_sdk_bedrock_runtime                  0.2.0        Apache Software License                                      
+ awscrt                                   0.28.4       Apache-2.0                                                   
+ backcall                                 0.2.0        BSD License                                                  
+ beartype                                 0.22.6       MIT License                                                  
+ beautifulsoup4                           4.14.3       MIT License                                                  
+ bleach                                   6.3.0        Apache Software License                                      
+ boto3                                    1.40.61      Apache-2.0                                                   
+ botocore                                 1.40.61      Apache-2.0                                                   
+ cachetools                               6.2.2        MIT License                                                  
+ cattrs                                   25.3.0       MIT License                                                  
+ cdk-nag                                  2.35.95      Apache-2.0                                                   
+ cdklabs.generative-ai-cdk-constructs     0.1.309      Apache-2.0                                                   
+ certifi                                  2025.11.12   Mozilla Public License 2.0 (MPL 2.0)                         
+ cffi                                     2.0.0        MIT                                                          
+ charset-normalizer                       3.4.4        MIT                                                          
+ click                                    8.3.1        BSD-3-Clause                                                 
+ coloredlogs                              15.0.1       MIT License                                                  
+ constructs                               10.4.3       Apache-2.0                                                   
+ cryptography                             46.0.3       Apache-2.0 OR BSD-3-Clause                                   
+ cyclopts                                 4.3.0        Apache-2.0                                                   
+ decorator                                5.2.1        BSD License                                                  
+ defusedxml                               0.7.1        Python Software Foundation License                           
+ dill                                     0.4.1        BSD License                                                  
+ diskcache                                5.6.3        Apache Software License                                      
+ distro                                   1.9.0        Apache Software License                                      
+ dnspython                                2.8.0        ISC License (ISCL)                                           
+ docopt                                   0.6.2        MIT License                                                  
+ docstring_parser                         0.17.0       MIT License                                                  
+ docutils                                 0.22.3       BSD License; GNU General Public License (GPL); Public Domain 
+ email-validator                          2.3.0        The Unlicense (Unlicense)                                    
+ exceptiongroup                           1.3.1        MIT License                                                  
+ executing                                2.2.1        MIT License                                                  
+ fastapi                                  0.115.14     MIT License                                                  
+ fastjsonschema                           2.21.2       BSD License                                                  
+ fastmcp                                  2.13.0.2     Apache-2.0                                                   
+ fasttext                                 0.9.3        MIT License                                                  
+ flatbuffers                              25.9.23      Apache Software License                                      
+ frozenlist                               1.8.0        Apache-2.0                                                   
+ future                                   1.0.0        MIT License                                                  
+ h11                                      0.16.0       MIT License                                                  
+ httpcore                                 1.0.9        BSD-3-Clause                                                 
+ httpx                                    0.28.1       BSD License                                                  
+ httpx-sse                                0.4.3        MIT                                                          
+ humanfriendly                            10.0         MIT License                                                  
+ idna                                     3.11         BSD-3-Clause                                                 
+ ijson                                    3.4.0.post0  BSD-3-Clause AND ISC                                         
+ importlib_metadata                       8.7.0        Apache Software License                                      
+ importlib_resources                      6.5.2        Apache Software License                                      
+ ipython                                  8.12.3       BSD License                                                  
+ jaraco.classes                           3.4.0        MIT License                                                  
+ jaraco.context                           6.0.1        MIT License                                                  
+ jaraco.functools                         4.3.0        MIT                                                          
+ jedi                                     0.19.2       MIT License                                                  
+ jeepney                                  0.9.0        MIT                                                          
+ jiter                                    0.12.0       MIT License                                                  
+ jmespath                                 1.0.1        MIT License                                                  
+ joblib                                   1.5.2        BSD License                                                  
+ jsii                                     1.120.0      Apache Software License                                      
+ jsonschema                               4.25.1       MIT                                                          
+ jsonschema-path                          0.3.4        Apache Software License                                      
+ jsonschema-specifications                2025.9.1     MIT                                                          
+ jupyter_client                           8.8.0        BSD License                                                  
+ jupyter_core                             5.9.1        BSD-3-Clause                                                 
+ jupyterlab_pygments                      0.3.0        BSD License                                                  
+ keyring                                  25.7.0       MIT                                                          
+ llvmlite                                 0.44.0       BSD                                                          
+ loguru                                   0.7.3        MIT License                                                  
+ markdown-it-py                           4.0.0        MIT License                                                  
+ markdownify                              1.2.2        MIT License                                                  
+ matplotlib-inline                        0.2.1        UNKNOWN                                                      
+ mcp                                      1.22.0       MIT License                                                  
+ mdurl                                    0.1.2        MIT License                                                  
+ mistune                                  3.2.0        BSD License                                                  
+ more-itertools                           10.8.0       MIT                                                          
+ mpmath                                   1.3.0        BSD License                                                  
+ multidict                                6.7.0        Apache License 2.0                                           
+ nbclient                                 0.10.4       BSD License                                                  
+ nbconvert                                7.17.0       BSD License                                                  
+ nbformat                                 5.10.4       BSD License                                                  
+ nltk                                     3.9.2        Apache Software License                                      
+ numba                                    0.61.2       BSD License                                                  
+ numpy                                    1.26.4       BSD License                                                  
+ onnxruntime                              1.20.1       MIT License                                                  
+ openai                                   2.16.0       Apache Software License                                      
+ openapi-pydantic                         0.5.1        MIT License                                                  
+ opentelemetry-api                        1.38.0       Apache-2.0                                                   
+ opentelemetry-instrumentation            0.59b0       Apache-2.0                                                   
+ opentelemetry-instrumentation-threading  0.59b0       Apache-2.0                                                   
+ opentelemetry-sdk                        1.38.0       Apache-2.0                                                   
+ opentelemetry-semantic-conventions       0.59b0       Apache-2.0                                                   
+ packaging                                25.0         Apache Software License; BSD License                         
+ pandocfilters                            1.5.1        BSD License                                                  
+ parso                                    0.8.6        MIT License                                                  
+ pathable                                 0.4.4        Apache Software License                                      
+ pathvalidate                             3.3.1        MIT License                                                  
+ pexpect                                  4.9.0        ISC License (ISCL)                                           
+ pickleshare                              0.7.5        MIT License                                                  
+ pillow                                   11.3.0       MIT-CMU                                                      
+ pipdeptree                               2.30.0       MIT                                                          
+ pipecat-ai                               0.0.98       BSD-2-Clause                                                 
+ pipreqs                                  0.5.0        Apache Software License                                      
+ pjsua2                                   2.16.dev0    UNKNOWN                                                      
+ platformdirs                             4.5.0        MIT                                                          
+ prompt_toolkit                           3.0.52       BSD License                                                  
+ propcache                                0.4.1        Apache Software License                                      
+ protobuf                                 5.29.5       3-Clause BSD License                                         
+ ptyprocess                               0.7.0        ISC License (ISCL)                                           
+ publication                              0.0.3        MIT License                                                  
+ pure_eval                                0.2.3        MIT License                                                  
+ py-key-value-aio                         0.2.8        Apache Software License                                      
+ py-key-value-shared                      0.2.8        Apache Software License                                      
+ pybind11                                 3.0.1        BSD-3-Clause                                                 
+ pycparser                                2.23         BSD License                                                  
+ pydantic                                 2.12.5       MIT                                                          
+ pydantic-settings                        2.12.0       MIT                                                          
+ pydantic_core                            2.41.5       MIT                                                          
+ pydub                                    0.25.1       MIT License                                                  
+ pyloudnorm                               0.1.1        MIT License                                                  
+ pyperclip                                1.11.0       BSD License                                                  
+ python-dateutil                          2.9.0.post0  Apache Software License; BSD License                         
+ python-dotenv                            1.1.1        BSD License                                                  
+ python-multipart                         0.0.20       Apache-2.0                                                   
+ pyzmq                                    27.1.0       BSD License                                                  
+ questionary                              2.1.1        MIT License                                                  
+ referencing                              0.36.2       MIT                                                          
+ regex                                    2025.11.3    Apache-2.0 AND CNRI-Python                                   
+ requests                                 2.32.3       Apache Software License                                      
+ resampy                                  0.4.3        ISC License (ISCL)                                           
+ rich                                     14.2.0       MIT License                                                  
+ rich-rst                                 1.3.2        MIT                                                          
+ rpds-py                                  0.29.0       MIT                                                          
+ s3transfer                               0.14.0       Apache Software License                                      
+ sarvamai                                 0.1.15       UNKNOWN                                                      
+ scipy                                    1.16.3       BSD License                                                  
+ shellingham                              1.5.4        ISC License (ISCL)                                           
+ six                                      1.17.0       MIT License                                                  
+ slack_bolt                               1.27.0       MIT License                                                  
+ slack_sdk                                3.39.0       MIT License                                                  
+ smallestai                               4.3.0        MIT License                                                  
+ smithy-aws-core                          0.2.0        Apache Software License                                      
+ smithy-aws-event-stream                  0.2.1        Apache Software License                                      
+ smithy-core                              0.2.0        Apache Software License                                      
+ smithy-http                              0.3.1        Apache Software License                                      
+ smithy-json                              0.2.1        Apache Software License                                      
+ sniffio                                  1.3.1        Apache Software License; MIT License                         
+ soundfile                                0.13.1       BSD License                                                  
+ soupsieve                                2.8.3        MIT                                                          
+ soxr                                     0.5.0.post1  GNU Lesser General Public License v2 or later (LGPLv2+)      
+ sse-starlette                            3.0.3        BSD-3-Clause                                                 
+ stack-data                               0.6.3        MIT License                                                  
+ starlette                                0.46.2       BSD-3-Clause                                                 
+ strands-agents                           1.15.0       Apache Software License                                      
+ strands-agents-tools                     0.2.19       Apache Software License                                      
+ sympy                                    1.14.0       BSD License                                                  
+ tenacity                                 9.1.2        Apache Software License                                      
+ tinycss2                                 1.4.0        BSD License                                                  
+ tomli                                    2.4.0        MIT                                                          
+ tomli_w                                  1.2.0        MIT License                                                  
+ tornado                                  6.5.5        Apache Software License                                      
+ tqdm                                     4.67.1       MIT License; Mozilla Public License 2.0 (MPL 2.0)            
+ traitlets                                5.14.3       BSD License                                                  
+ typeguard                                2.13.3       MIT License                                                  
+ typer                                    0.20.0       MIT License                                                  
+ typing-inspection                        0.4.2        MIT                                                          
+ typing_extensions                        4.15.0       PSF-2.0                                                      
+ urllib3                                  2.5.0        MIT                                                          
+ uvicorn                                  0.38.0       BSD-3-Clause                                                 
+ watchdog                                 6.0.0        Apache Software License                                      
+ webencodings                             0.5.1        BSD License                                                  
+ websocket-client                         1.9.0        Apache Software License                                      
+ websockets                               15.0.1       BSD License                                                  
+ wrapt                                    1.17.3       BSD License                                                  
+ yarg                                     0.1.9        MIT License                                                  
+ yarl                                     1.22.0       Apache Software License                                      
+ zipp                                     3.23.0       MIT                                                          

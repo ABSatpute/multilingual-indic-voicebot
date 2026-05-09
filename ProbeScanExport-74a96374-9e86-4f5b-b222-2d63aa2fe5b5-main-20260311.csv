@@ -1,0 +1,90 @@
+Job Name,Severity,File Name,Line,Message,Remarks
+gitleaks,ERROR,frontend/public/aws-exports.json,5,generic-api-key : fingerprint 444e7ac1d89f7c47d1741c535c3d1aa0618f0427:frontend/public/aws-exports.json:generic-api-key:5,"Not a generic api key, it is a sample cognito app client id"
+gitleaks,ERROR,backend/.env,4,generic-api-key : fingerprint d3962e64e46888df1ffd946beffe4de785a1a51f:backend/.env:generic-api-key:4,"Not a generic api key, it is a sample cognito app client id"
+checkov,WARNING,/backend/Dockerfile,1,CKV_DOCKER_2: Ensure that HEALTHCHECK instructions have been added to container images,
+checkov,WARNING,/backend/Dockerfile,1,CKV_DOCKER_3: Ensure that a user for the container has been created,
+bandit,WARNING,backend/utils.py,50,B113: Requests call without timeout,
+bandit,WARNING,backend/main.py,171,B102: Use of exec detected.,
+bandit,WARNING,backend/main.py,475,B104: Possible binding to all interfaces.,
+grype,WARNING,Dependency: webpack-dev-server Version: 4.15.2 (npm),0,"GHSA-9jgg-88mc-972h - webpack-dev-server users' source code may be stolen when they access a malicious web site with non-Chromium based browser
+More information is available from these links:
+https://github.com/advisories/GHSA-9jgg-88mc-972h",
+grype,WARNING,Dependency: webpack-dev-server Version: 4.15.2 (npm),0,"GHSA-4v9v-hfq4-rm2v - webpack-dev-server users' source code may be stolen when they access a malicious web site
+More information is available from these links:
+https://github.com/advisories/GHSA-4v9v-hfq4-rm2v",
+grype,ERROR,Dependency: jsonpath Version: 1.2.1 (npm),0,"GHSA-87r5-mp6g-5w5j - jsonpath has Arbitrary Code Injection via Unsafe Evaluation of JSON Path Expressions
+More information is available from these links:
+https://github.com/advisories/GHSA-87r5-mp6g-5w5j","Indirect dependecies, changing these will break the direct dependencies"
+grype,ERROR,Dependency: nth-check Version: 1.0.2 (npm),0,"GHSA-rp65-9cf3-cjxr - Inefficient Regular Expression Complexity in nth-check
+More information is available from these links:
+https://github.com/advisories/GHSA-rp65-9cf3-cjxr","Indirect dependecies, changing these will break the direct dependencies"
+grype,ERROR,Dependency: underscore Version: 1.13.6 (npm),0,"GHSA-qpx9-hpmf-5gmw - Underscore has unlimited recursion in _.flatten and _.isEqual, potential for DoS attack
+More information is available from these links:
+https://github.com/advisories/GHSA-qpx9-hpmf-5gmw","Indirect dependecies, changing these will break the direct dependencies"
+grype,ERROR,Dependency: serialize-javascript Version: 4.0.0 (npm),0,"GHSA-5c6j-r48x-rmvq - Serialize JavaScript is Vulnerable to RCE via RegExp.flags and Date.prototype.toISOString()
+More information is available from these links:
+https://github.com/advisories/GHSA-5c6j-r48x-rmvq","Indirect dependecies, changing these will break the direct dependencies"
+grype,ERROR,Dependency: serialize-javascript Version: 6.0.2 (npm),0,"GHSA-5c6j-r48x-rmvq - Serialize JavaScript is Vulnerable to RCE via RegExp.flags and Date.prototype.toISOString()
+More information is available from these links:
+https://github.com/advisories/GHSA-5c6j-r48x-rmvq","Indirect dependecies, changing these will break the direct dependencies"
+grype,ERROR,Dependency: cryptography Version: 46.0.3 (python),0,"GHSA-r6ph-v2qm-q3c2 - cryptography Vulnerable to a Subgroup Attack Due to Missing Subgroup Validation for SECT Curves
+More information is available from these links:
+https://github.com/advisories/GHSA-r6ph-v2qm-q3c2","Indirect dependecies, changing these will break the direct dependencies"
+grype,WARNING,Dependency: requests Version: 2.32.3 (python),0,"GHSA-9hjg-9r4m-mvj7 - Requests vulnerable to .netrc credentials leak via malicious URLs
+More information is available from these links:
+https://github.com/advisories/GHSA-9hjg-9r4m-mvj7",
+grype,INFO,Dependency: @tootallnate/once Version: 1.1.2 (npm),0,"GHSA-vpq2-c234-7xj6 - @tootallnate/once vulnerable to Incorrect Control Flow Scoping
+More information is available from these links:
+https://github.com/advisories/GHSA-vpq2-c234-7xj6",
+grype,WARNING,Dependency: postcss Version: 7.0.39 (npm),0,"GHSA-7fh5-64p2-3v2j - PostCSS line return parsing error
+More information is available from these links:
+https://github.com/advisories/GHSA-7fh5-64p2-3v2j",
+grype,ERROR,Dependency: svgo Version: 2.8.0 (npm),0,"GHSA-xpqw-6gx7-v673 - SVGO DoS through entity expansion in DOCTYPE (Billion Laughs)
+More information is available from these links:
+https://github.com/advisories/GHSA-xpqw-6gx7-v673","Indirect dependecies, changing these will break the direct dependencies"
+semgrep,WARNING,frontend/package.json,17,Rule ID: package-dependencies-check Message: Package dependencies with variant versions may lead to dependency hijack and confusion attacks. Better to specify an exact version or use package-lock.json for a specific version of the package.,
+semgrep,WARNING,backend/main.py,440,Rule ID: wildcard-cors Message: CORS policy allows any origin (using wildcard '*'). This is insecure and should be avoided.,
+semgrep,WARNING,frontend/src/Content.js,324,"Rule ID: jsx-not-internationalized Message: JSX element not internationalized: 'Visualization'.  You should support different languages in your website or app with internationalization. Instead, use packages such as `i18next` in order to internationalize your elements.",
+semgrep,WARNING,frontend/src/Content.js,290,"Rule ID: jsx-not-internationalized Message: JSX element not internationalized: 'Pipeline'.  You should support different languages in your website or app with internationalization. Instead, use packages such as `i18next` in order to internationalize your elements.",
+semgrep,ERROR,backend/main.py,412,Rule ID: useless-inner-function Message: function `on_client_connected` is defined inside a function but never used,"false alarm, code lines are actually being used"
+semgrep,WARNING,frontend/src/Content.js,249,"Rule ID: jsx-not-internationalized Message: JSX element not internationalized: '
+                            Settings
+                        '.  You should support different languages in your website or app with internationalization. Instead, use packages such as `i18next` in order to internationalize your elements.",
+semgrep,WARNING,frontend/src/Content.js,307,"Rule ID: jsx-not-internationalized Message: JSX element not internationalized: 'Language'.  You should support different languages in your website or app with internationalization. Instead, use packages such as `i18next` in order to internationalize your elements.",
+semgrep,WARNING,backend/vendors/smallest_stt.py,42,"Rule ID: logging-error-without-handling Message: Errors should only be logged when handled. The code logs the error and propogates the exception, consider reducing the level to warning or info.",
+semgrep,WARNING,backend/vendors/smallest_stt.py,256,"Rule ID: logging-error-without-handling Message: Errors should only be logged when handled. The code logs the error and propogates the exception, consider reducing the level to warning or info.",
+semgrep,WARNING,frontend/package.json,14,Rule ID: package-dependencies-check Message: Package dependencies with variant versions may lead to dependency hijack and confusion attacks. Better to specify an exact version or use package-lock.json for a specific version of the package.,
+semgrep,WARNING,frontend/package.json,19,Rule ID: package-dependencies-check Message: Package dependencies with variant versions may lead to dependency hijack and confusion attacks. Better to specify an exact version or use package-lock.json for a specific version of the package.,
+semgrep,WARNING,backend/patch/llm.py,83,"Rule ID: logging-error-without-handling Message: Errors should only be logged when handled. The code logs the error and propogates the exception, consider reducing the level to warning or info.",
+semgrep,INFO,backend/Dockerfile,4,"Rule ID: dockerfile-source-not-pinned Message: To ensure reproducible builds, pin Dockerfile `FROM` commands to a specific hash. You can find the hash by running `docker pull python` and then  specify it with `python:3.12-slim@sha256:<hash goes here>`",
+semgrep,INFO,frontend/src/Hologram.js,353,Rule ID: missing-template-string-indicator Message: This looks like a JavaScript template string. Are you missing a '$' in front of '{...}'?,
+semgrep,WARNING,frontend/package.json,21,Rule ID: package-dependencies-check Message: Package dependencies with variant versions may lead to dependency hijack and confusion attacks. Better to specify an exact version or use package-lock.json for a specific version of the package.,
+semgrep,WARNING,backend/utils.py,50,"Rule ID: use-timeout Message: Detected a 'requests' call without a timeout set. By default, 'requests' calls wait until the connection is closed. This means a 'requests' call without a timeout will hang the program if a response is never received. Consider setting a timeout for all 'requests'.",
+semgrep,INFO,backend/utils.py,50,"Rule ID: request-with-http Message: Detected a request using 'http://'. This request will be unencrypted, and attackers could listen into traffic on the network and be able to obtain sensitive information. Use 'https://' instead.",
+semgrep,WARNING,backend/main.py,171,"Rule ID: exec-detected Message: Detected the use of exec(). exec() can be dangerous if used to evaluate dynamic content. If this content can be input from outside the program, this may be a code injection vulnerability. Ensure evaluated content is not definable by external sources.",
+semgrep,WARNING,backend/patch/llm.py,84,"Rule ID: logging-error-without-handling Message: Errors should only be logged when handled. The code logs the error and propogates the exception, consider reducing the level to warning or info.",
+semgrep,ERROR,backend/main.py,418,Rule ID: useless-inner-function Message: function `on_client_disconnected` is defined inside a function but never used,"false alarm, code lines are actually being used"
+semgrep,WARNING,frontend/src/App.js,13,"Rule ID: jsx-not-internationalized Message: JSX element not internationalized: '
+                        Employee support voicebot
+                    '.  You should support different languages in your website or app with internationalization. Instead, use packages such as `i18next` in order to internationalize your elements.",
+semgrep,WARNING,frontend/package.json,16,Rule ID: package-dependencies-check Message: Package dependencies with variant versions may lead to dependency hijack and confusion attacks. Better to specify an exact version or use package-lock.json for a specific version of the package.,
+semgrep,WARNING,frontend/src/Content.js,240,"Rule ID: jsx-not-internationalized Message: JSX element not internationalized: 'Employee support voicebot'.  You should support different languages in your website or app with internationalization. Instead, use packages such as `i18next` in order to internationalize your elements.",
+semgrep,INFO,frontend/src/Hologram.js,353,Rule ID: missing-template-string-indicator Message: This looks like a JavaScript template string. Are you missing a '$' in front of '{...}'?,
+semgrep,WARNING,backend/Dockerfile,7,"Rule ID: remove-package-cache Message: The package cache was not deleted after running 'apt-get update', which increases the size of the image. Remove the package cache by appending '&& apt-get clean' at the end of apt-get command chain.",
+semgrep,INFO,backend/Dockerfile,7,"Rule ID: missing-no-install-recommends Message: This 'apt-get install' is missing '--no-install-recommends'. This prevents unnecessary packages from being installed, thereby reducing image size. Add '--no-install-recommends'.",
+semgrep,WARNING,frontend/src/App.js,16,"Rule ID: jsx-not-internationalized Message: JSX element not internationalized: '
+                        Developed by PACE India
+                    '.  You should support different languages in your website or app with internationalization. Instead, use packages such as `i18next` in order to internationalize your elements.",
+semgrep,ERROR,backend/patch/llm.py,21,"Rule ID: python37-compatibility-importlib2 Message: Found 'importlib.resources', which is a module only available on Python 3.7+. This does not work in lower versions, and therefore is not backwards compatible. Use importlib_resources instead for older Python versions.",prototype is not expected to work with python version <3.7
+semgrep,ERROR,backend/main.py,423,Rule ID: useless-inner-function Message: function `on_session_timeout` is defined inside a function but never used,"false alarm, code lines are actually being used"
+semgrep,INFO,frontend/src/Hologram.js,335,Rule ID: missing-template-string-indicator Message: This looks like a JavaScript template string. Are you missing a '$' in front of '{...}'?,
+semgrep,WARNING,frontend/package.json,15,Rule ID: package-dependencies-check Message: Package dependencies with variant versions may lead to dependency hijack and confusion attacks. Better to specify an exact version or use package-lock.json for a specific version of the package.,
+semgrep,INFO,backend/Dockerfile,16,"Rule ID: missing-pip-no-cache-dir Message: This 'pip install' is missing '--no-cache-dir'. This flag prevents package archives from being kept around, thereby reducing image size. Add '--no-cache-dir'.",
+semgrep,WARNING,backend/vendors/smallest_stt.py,41,"Rule ID: logging-error-without-handling Message: Errors should only be logged when handled. The code logs the error and propogates the exception, consider reducing the level to warning or info.",
+semgrep,INFO,frontend/src/Hologram.js,335,Rule ID: missing-template-string-indicator Message: This looks like a JavaScript template string. Are you missing a '$' in front of '{...}'?,
+semgrep,WARNING,frontend/package.json,18,Rule ID: package-dependencies-check Message: Package dependencies with variant versions may lead to dependency hijack and confusion attacks. Better to specify an exact version or use package-lock.json for a specific version of the package.,
+semgrep,WARNING,frontend/src/Content.js,258,"Rule ID: jsx-not-internationalized Message: JSX element not internationalized: '
+                            Logout
+                        '.  You should support different languages in your website or app with internationalization. Instead, use packages such as `i18next` in order to internationalize your elements.",
+semgrep,WARNING,frontend/src/Content.js,285,"Rule ID: jsx-not-internationalized Message: JSX element not internationalized: 'Settings'.  You should support different languages in your website or app with internationalization. Instead, use packages such as `i18next` in order to internationalize your elements.",
+semgrep,ERROR,backend/main.py,428,Rule ID: useless-inner-function Message: function `on_pipeline_error` is defined inside a function but never used,"false alarm, code lines are actually being used"
