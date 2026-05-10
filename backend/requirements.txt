@@ -1,5 +1,5 @@
 python-dotenv==1.1.1
-pipecat-ai[aws,aws-nova-sonic,silero,websocket]==0.0.102
+pipecat-ai[aws,aws-nova-sonic,silero,websocket,sarvam]==0.0.102
 uvicorn>=0.31.1
 boto3>=1.38.25
 aioboto3>=15.0.0

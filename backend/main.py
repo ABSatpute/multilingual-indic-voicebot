@@ -46,9 +46,8 @@ from pipecat.services.elevenlabs.stt import ElevenLabsRealtimeSTTService, Eleven
 from pipecat.services.elevenlabs.tts import ElevenLabsTTSService
 from strands import Agent, tool
 from strands.experimental.hooks import BeforeToolInvocationEvent
-from vendors.smallest_stt import SmallestSTTService, AudioEncoding, AudioChannel
-from vendors.smallest_stt import SmallestSTTService, SmallestSTTHTTPService, Model, AudioEncoding, AudioChannel
-from vendors.smallest_tts import SmallestTTSService, language_to_smallest_language
+from pipecat.services.sarvam.stt import SarvamSTTService
+from pipecat.services.sarvam.tts import SarvamTTSService
 from pipecat.observers.loggers.llm_log_observer import LLMLogObserver
 from typing import Callable, Any
 from functools import wraps
@@ -82,7 +81,7 @@ LANGUAGE_GREETINGS = {
 }
 
 secrets_client = boto3.client(service_name='secretsmanager',region_name=os.getenv('AWS_DEFAULT_REGION'))
-SMALLEST_API_KEY = secrets_client.get_secret_value(SecretId=os.environ["SMALLEST_API_KEY"])['SecretString']
+SARVAM_API_KEY = secrets_client.get_secret_value(SecretId=os.environ["SARVAM_API_KEY"])['SecretString']
 
 def map_language_string_to_enum(language: str) -> Language:
     language_map = {
@@ -111,14 +110,18 @@ def get_voice_id_for_service(service_name: str, language: Language) -> str:
             Language.EN: 'Danielle',  # English (US) - Neural voice
             Language.HI: 'Kajal',     # Hindi (India) - Neural voice
         },
-        'smallest': {
-            Language.EN: 'aditi',     # English
-            Language.HI: 'aditi',     # Hindi
-            Language.BN: 'biswa',     # Bengali - fallback to Hindi
-            Language.GU: 'gargi',     # Gujarati - fallback to Hindi
-            Language.KN: 'vijay',     # Kannada - fallback to Hindi
-            Language.MR: 'karan',     # Marathi - fallback to Hindi
-            Language.TA: 'vidya',     # Tamil - fallback to Hindi
+        'sarvam': {
+            Language.EN: 'anand',
+            Language.HI: 'anand',
+            Language.BN: 'anand',
+            Language.GU: 'anand',
+            Language.KN: 'anand',
+            Language.MR: 'anand',
+            Language.TA: 'anand',
+            Language.TE: 'anand',
+            Language.OR: 'anand',
+            Language.PA: 'anand',
+            Language.AS: 'anand',
         },
         'novasonic': {
             Language.EN: 'tiffany',  # English (US) - Neural voice
@@ -253,31 +256,35 @@ async def create_stt_tts_services(pipeline, language):
             )
         )
 
-    elif pipeline.lower() == "smallest":
-        if language == 'multi':
-            smallest_language = 'multi'
-        else: 
-            smallest_language = language_to_smallest_language(language)
+    elif pipeline.lower() == "sarvam":
+        # Map Language enum to Sarvam language code
+        sarvam_language_map = {
+            Language.EN: "en-IN",
+            Language.HI: "hi-IN",
+            Language.BN: "bn-IN",
+            Language.GU: "gu-IN",
+            Language.KN: "kn-IN",
+            Language.ML: "ml-IN",
+            Language.MR: "mr-IN",
+            Language.TA: "ta-IN",
+            Language.TE: "te-IN",
+            Language.OR: "od-IN",
+            Language.PA: "pa-IN",
+            Language.AS: "as-IN",
+        }
+        sarvam_lang = sarvam_language_map.get(language, "unknown")
 
-        if not smallest_language:
-            logger.warning(f"Language {language} not supported by Smallest, defaulting to 'en'")
-            smallest_language = "en"
-        
-        stt = SmallestSTTHTTPService(
-            api_key=SMALLEST_API_KEY,
-            model=getattr(Model, "LIGHTNING"),
-            language=smallest_language,
-            age_detection=False,
-            emotion_detection=False,
-            gender_detection=False,
-            sample_rate=SAMPLE_RATE
+        stt = SarvamSTTService(
+            api_key=SARVAM_API_KEY,
+            language=sarvam_lang,
+            model="saaras:v3",
+            mode="transcribe"
         )
-        tts = SmallestTTSService(
-            api_key=SMALLEST_API_KEY,
-            voice_id=voice_id,
-            params=SmallestTTSService.InputParams(
-                language=smallest_language,
-            )
+        tts = SarvamTTSService(
+            api_key=SARVAM_API_KEY,
+            target_language_code=sarvam_lang,
+            model="bulbul:v3",
+            speaker=voice_id
         )
       
     else:

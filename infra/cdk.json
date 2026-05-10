@@ -95,8 +95,8 @@
         "@aws-cdk/aws-ec2:requirePrivateSubnetsForEgressOnlyInternetGateway": true,
         "@aws-cdk/aws-s3:publicAccessBlockedByDefault": true,
         "@aws-cdk/aws-lambda:useCdkManagedLogGroup": true,
-        "knowledgebase": "XLCBKXUAGX",
+        "knowledgebase": "HN2QJNTWYX",
         "llm_model": "apac.amazon.nova-lite-v1:0",
-        "secret_name": "smallest_key"
+        "secret_name": "sarvam_key"
     }
 }
