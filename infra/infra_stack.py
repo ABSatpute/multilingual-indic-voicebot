@@ -212,7 +212,7 @@ class InfraStack(Stack):
                 "KNOWLEDGE_BASE_ID": knowledgebase,
                 "AWS_DEFAULT_REGION": region,
                 "LLM_MODEL": llm_model,
-                "SMALLEST_API_KEY": secret.secret_arn
+                "SARVAM_API_KEY": secret.secret_arn
             },
             logging=ecs.LogDrivers.aws_logs(
                 stream_prefix="voicebot",
