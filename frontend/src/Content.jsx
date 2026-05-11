@@ -61,7 +61,10 @@ function Content({ signOut, user, apiUrl }) {
         const savedSettings = localStorage.getItem('settings');
         if (savedSettings) {
             try {
-                return JSON.parse(savedSettings);
+                const parsed = JSON.parse(savedSettings);
+                // Validate saved pipeline still exists
+                const validPipeline = PIPELINES.find(p => p.value === parsed.pipeline);
+                if (validPipeline) return parsed;
             } catch (error) {
                 console.error('Error loading settings from localStorage:', error);
             }
