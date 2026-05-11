@@ -2,14 +2,14 @@
     "amplify": {
         "Auth": {
             "Cognito": {
-                "userPoolClientId": "USER_POOL_APP_CLIENT_ID",
-                "userPoolId": "USER_POOL_ID",
-                "identityPoolId": "COGNITO_IDENITITY_POOL_ID",
+                "userPoolClientId": "6f7p4rvql166hmjds47rdlk9fc",
+                "userPoolId": "ap-south-1_T8mpn4dHX",
+                "identityPoolId": "ap-south-1:6c875893-205c-408e-a124-79c68dc30675",
                 "region": "ap-south-1"
             }
         }
     },
     "websocket": {
-        "apiUrl": "ws://localhost:8080/ws"
+        "apiUrl": "ws://VoicebotStack-VoicebotNLB-62bKZlDEyRpO-0149149dd156f540.elb.ap-south-1.amazonaws.com/ws"
     }
 }
