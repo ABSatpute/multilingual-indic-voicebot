@@ -10,6 +10,6 @@
         }
     },
     "websocket": {
-        "apiUrl": "ws://Voiceb-Voice-62bKZlDEyRpO-0149149dd156f540.elb.ap-south-1.amazonaws.com/ws"
+        "apiUrl": "wss://di0wrs4gqosj4.cloudfront.net/ws"
     }
 }
