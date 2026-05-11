@@ -10,6 +10,6 @@
         }
     },
     "websocket": {
-        "apiUrl": "ws://VoicebotStack-VoicebotNLB-62bKZlDEyRpO-0149149dd156f540.elb.ap-south-1.amazonaws.com/ws"
+        "apiUrl": "ws://Voiceb-Voice-62bKZlDEyRpO-0149149dd156f540.elb.ap-south-1.amazonaws.com/ws"
     }
 }
