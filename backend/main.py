@@ -277,8 +277,7 @@ async def create_stt_tts_services(pipeline, language):
         stt = SarvamSTTService(
             api_key=SARVAM_API_KEY,
             language=sarvam_lang,
-            model="saaras:v3",
-            mode="transcribe"
+            model="saaras:v3"
         )
         tts = SarvamTTSService(
             api_key=SARVAM_API_KEY,
