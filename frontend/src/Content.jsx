@@ -21,16 +21,21 @@ const PIPELINES = [
         ]
     },
     {
-        value: 'smallest',
-        label: 'Smallest.ai',
+        value: 'sarvam',
+        label: 'Sarvam AI (Indic languages)',
         languages: [
             { value: 'english', label: 'English' },
             { value: 'hindi', label: 'Hindi' },
-            { value: 'gujarati', label: 'Gujarati' },
             { value: 'bengali', label: 'Bengali' },
-            { value: 'tamil', label: 'Tamil' },
+            { value: 'gujarati', label: 'Gujarati' },
             { value: 'kannada', label: 'Kannada' },
-            { value: 'multi', label: 'Multi language' }
+            { value: 'malayalam', label: 'Malayalam' },
+            { value: 'marathi', label: 'Marathi' },
+            { value: 'tamil', label: 'Tamil' },
+            { value: 'telugu', label: 'Telugu' },
+            { value: 'odia', label: 'Odia' },
+            { value: 'punjabi', label: 'Punjabi' },
+            { value: 'assamese', label: 'Assamese' }
         ]
     },
     {
